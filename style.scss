@@ -1,12 +1,15 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 $color-red: #ce1b28;
@@ -46,65 +49,93 @@ header nav ul {
   gap: 5px;
 }
 
-.article{
-    background-image:linear-gradient(to right,rgba(143, 45, 45, 0.35), rgba(80, 72, 72, 0.35)), url('banner2.jpg');
-    background-size: cover; 
-    height:20em;
-    background-position: center bottom;
-    color: $text-ligth;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    flex-direction: column;
-    gap: 10px;
+.article {
+  background-image:
+    linear-gradient(to right, rgba(143, 45, 45, 0.35), rgba(80, 72, 72, 0.35)),
+    url("banner2.jpg");
+  background-size: cover;
+  height: 20em;
+  background-position: center bottom;
+  color: $text-ligth;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.cta{
-    background-image:linear-gradient(rgba(182, 39, 39, 0.444)), url('cta01.jpg');
-    background-size: cover; 
-    height:20em;
-    color: $text-ligth;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    flex-direction: column;
-    gap: 10px;
+.cta {
+  background-image: linear-gradient(rgba(182, 39, 39, 0.444)), url("cta01.jpg");
+  background-size: cover;
+  height: 20em;
+  color: $text-ligth;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  gap: 10px;
 }
 
-article p{
-    padding: 0 20%;
-    align-items: center;
-    text-align: center;
+article p {
+  padding: 0 20%;
+  align-items: center;
+  text-align: center;
 }
 
-main{
-    position: relative;
-    background-image:linear-gradient( rgba(255, 252, 252, 0.905)), url('bg.jpg');
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    color: $text-dark;
-    width: 100%;
-    height: 30em;
-}
+.main {
+  position: relative;
+  background-image: linear-gradient(rgba(255, 252, 252, 0.905)), url("bg.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  color: $text-dark;
+  width: 100%;
+  height: auto;
 
-main h2{
+  h2 {
     margin-top: 20px;
+  }
 }
 
-.bloc{
-    background-color: white;
-    border-radius: 3px;
-    width:15em;
+.list-article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 20px;
+  align-items: center;
 }
 
-.footer{
-    background-color: $color-dark;
-    width: 100%;
-    height: 10em;
+.bloc {
+  background-color: white;
+  border-radius: 3px;
+  width: 15em;
+  height: 15em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+
+  i {
+    font-size: 2em;
+    color: $color-red;
+    margin-bottom: 15px;
+  }
+
+  h1 {
+    color: rgba(7, 7, 7, 0.24);
+    font-size: small;
+  }
+}
+
+.footer {
+  background-color: $color-dark;
+  width: 100%;
+  height: 10em;
 }

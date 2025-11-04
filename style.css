@@ -5,6 +5,9 @@
 }
 
 body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
   display: flex;
   flex-direction: column;
 }
@@ -42,7 +45,9 @@ header nav ul {
 }
 
 .article {
-  background-image: linear-gradient(to right, rgba(143, 45, 45, 0.35), rgba(80, 72, 72, 0.35)), url("banner2.jpg");
+  background-image:
+    linear-gradient(to right, rgba(143, 45, 45, 0.35), rgba(80, 72, 72, 0.35)),
+    url("banner2.jpg");
   background-size: cover;
   height: 20em;
   background-position: center bottom;
@@ -74,7 +79,7 @@ article p {
   text-align: center;
 }
 
-main {
+.main {
   position: relative;
   background-image: linear-gradient(rgba(255, 252, 252, 0.905)), url("bg.jpg");
   background-size: cover;
@@ -83,23 +88,46 @@ main {
   align-items: center;
   justify-content: center;
   gap: 20px;
+  padding: 20px;
   color: #555555;
   width: 100%;
-  height: 30em;
+  height: auto;
+}
+.main h2 {
+  margin-top: 20px;
 }
 
-main h2 {
+.list-article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
   margin-top: 20px;
+  align-items: center;
 }
 
 .bloc {
   background-color: white;
   border-radius: 3px;
   width: 15em;
+  height: 15em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.bloc i {
+  font-size: 2em;
+  color: #ce1b28;
+  margin-bottom: 15px;
+}
+.bloc h1 {
+  color: rgba(7, 7, 7, 0.24);
+  font-size: small;
 }
 
 .footer {
   background-color: #111111;
   width: 100%;
   height: 10em;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
