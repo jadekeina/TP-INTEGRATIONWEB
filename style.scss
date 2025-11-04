@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+}
+
 $color-red: #ce1b28;
 $color-dark: #111111;
 $text-dark: #555555;
@@ -17,7 +22,6 @@ header {
   color: #ffffff;
   width: 100%;
   height: 40px;
-  display: flex;
 }
 
 header h1 {
@@ -42,14 +46,29 @@ header nav ul {
   gap: 5px;
 }
 
-article{
+.article{
     background-image:linear-gradient(to right,rgba(143, 45, 45, 0.35), rgba(80, 72, 72, 0.35)), url('banner2.jpg');
+    background-size: cover; 
     height:20em;
     background-position: center bottom;
     color: $text-ligth;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cta{
+    background-image:linear-gradient(rgba(182, 39, 39, 0.444)), url('cta01.jpg');
+    background-size: cover; 
+    height:20em;
+    color: $text-ligth;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     flex-direction: column;
     gap: 10px;
 }
@@ -58,4 +77,34 @@ article p{
     padding: 0 20%;
     align-items: center;
     text-align: center;
+}
+
+main{
+    position: relative;
+    background-image:linear-gradient( rgba(255, 252, 252, 0.905)), url('bg.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: $text-dark;
+    width: 100%;
+    height: 30em;
+}
+
+main h2{
+    margin-top: 20px;
+}
+
+.bloc{
+    background-color: white;
+    border-radius: 3px;
+    width:15em;
+}
+
+.footer{
+    background-color: $color-dark;
+    width: 100%;
+    height: 10em;
 }
